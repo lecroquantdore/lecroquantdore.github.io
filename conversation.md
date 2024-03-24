@@ -1,0 +1,1 @@
+L'utilisateur a indiqué que le rendu du site précédemment exporté était catastrophique et a demandé une amélioration pour que le display soit meilleur.

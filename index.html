@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f0f0; color: #333; }
+        nav, footer { background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        a, button { color: #007bff; }
+        button { border: 1px solid #007bff; }
+        main { padding-top: 2rem; }
+        h2, h3 { color: #333; }
+        nav ul li strong, footer { font-weight: bold; }
+        figure { margin-top: 2rem; }
+        img { border-radius: 8px; max-width: 100%; height: auto; }
+        form, .fritzy, .find-us, .opening-hours { margin-top: 2rem; }
+        .find-us img { max-width: 90%; height: auto; }
+    </style>
+    <title>Le Croquant Doré - Friterie à Arlon</title>
+</head>
+<body>
+<nav class="container-fluid">
+    <ul>
+        <li><strong>Le Croquant Doré</strong></li>
+    </ul>
+    <ul>
+        <li><a href="#burgers">Nos Burgers</a></li>
+        <li><a href="#reviews">Avis</a></li>
+        <li><a href="#fritzy">Fritzy</a></li>
+        <li><a href="#find-us">Nous trouver</a></li>
+        <li><a href="#opening-hours">Horaires</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<main class="container">
+    <div class="grid">
+        <section>
+            <hgroup>
+                <h2>Bienvenue au Croquant Doré</h2>
+                <h3>Découvrez nos délicieux burgers</h3>
+            </hgroup>
+            <p>Venez déguster nos fameux burgers et autres délices dans notre friterie située à Arlon, Belgique. Nous nous engageons à utiliser des ingrédients frais pour une expérience culinaire inoubliable.</p>
+            <figure>
+                <img src="https://source.unsplash.com/featured/?burger" alt="Burger gourmet" />
+                <figcaption><a href="https://unsplash.com/s/photos/burger" target="_blank">Photo par Unsplash</a></figcaption>
+            </figure>
+            <h3>Nos Burgers</h3>
+            <p>Découvrez notre sélection de burgers faits maison, préparés avec amour et des produits de qualité.</p>
+        </section>
+        <section class="fritzy" id="fritzy">
+            <h2>Votre commande à retirer sur Fritzy</h2>
+            <p>Vous pouvez maintenant passer votre commande via Fritzy et venir la retirer à la friterie.</p>
+            <a href="https://www.fritzy.com" target="_blank">Commander sur Fritzy</a>
+        </section>
+        <section class="find-us" id="find-us">
+            <h2>Où nous trouver</h2>
+            <img src="https://source.unsplash.com/featured/?city,arlon" alt="Arlon">
+            <p>Retrouvez-nous au cœur d'Arlon, pour une expérience culinaire unique.</p>
+        </section>
+        <section class="opening-hours" id="opening-hours">
+            <h2>Nos horaires d'ouverture</h2>
+            <p>Lundi au Vendredi : 11h - 21h</p>
+            <p>Samedi : 11h - 22h</p>
+            <p>Dimanche : Fermé</p>
+        </section>
+    </div>
+</main>
+<section aria-label="Contact">
+    <div class="container">
+        <article>
+            <hgroup>
+                <h2>Contactez-nous</h2>
+                <h3>Pour vos événements spéciaux</h3>
+            </hgroup>
+            <form class="grid">
+                <input type="text" id="name" name="name" placeholder="Votre nom" aria-label="Votre nom" required />
+                <input type="email" id="email" name="email" placeholder="Votre email" aria-label="Votre email" required />
+                <textarea id="message" name="message" placeholder="Votre message" aria-label="Votre message" required></textarea>
+                <button type="submit" onclick="event.preventDefault()">Envoyer</button>
+            </form>
+        </article>
+    </div>
+</section>
+<footer class="container">
+    <small><a href="#">Politique de confidentialité</a> • <a href="#">Conditions d'utilisation</a></small>
+</footer>
+</body>
+</html>
