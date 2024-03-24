@@ -2,3 +2,40 @@ html {
   height: 100%;
   width: 100%;
 }
+
+/* Styles de base pour mobiles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query pour les écrans d'au moins 768px de large */
+@media (min-width: 768px) {
+  body {
+    padding: 40px;
+  }
+
+  .container {
+    width: 80%;
+    margin: auto;
+    max-width: 960px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
